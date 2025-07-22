@@ -1,0 +1,7 @@
+package com.SrMarxx.archive.controllers.dtos;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public record UserRecordDTO(@NotBlank String name, @NotBlank @Email String email, @NotBlank String username, @NotBlank String password) {
+}
